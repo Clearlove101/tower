@@ -24,7 +24,42 @@ public:
     ~zPea();
     void act();
 private:
-    QMovie* anim = new QMovie(":/FlyingObjects/Pea.gif");
+    QMovie* anim = new QMovie(":/FlyingObjects/rc/Pea.gif");
     int speed;
 };
+
+class zFirePea : public zFlyingObject
+{
+public:
+    zFirePea(QWidget* parent = 0);
+    ~zFirePea();
+    void act();
+private:
+    QMovie* anim = new QMovie(":/FlyingObjects/rc/PeaFire.gif");
+    int speed;
+};
+
+class zIcePea : public zFlyingObject
+{
+public:
+    zIcePea(QWidget* parent = 0);
+    ~zIcePea();
+    void act();
+private:
+    QMovie* anim = new QMovie(":/FlyingObjects/rc/PeaIce.gif");
+    int speed;
+};
+
+class zMush : public zFlyingObject
+{
+public:
+    zMush(QWidget* parent = 0);
+    ~zMush();
+    void act();
+private:
+    QMovie* anim = new QMovie(":/FlyingObjects/rc/Mush.gif");
+    int speed;
+    int TimerFly;
+};
+
 #endif // ZFLYINGOBJECT_H
