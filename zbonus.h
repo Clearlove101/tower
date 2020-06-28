@@ -26,7 +26,7 @@ public:
 protected:
     void mousePressEvent(QMouseEvent *event);
 private:
-    QMovie* anim = new QMovie(":/Bonus/Sun.gif");
+    QMovie* anim = new QMovie(":/Bonus/rc/Sun.gif");
 };
 
 class zSunFall : public zBonus
@@ -40,7 +40,7 @@ public:
 protected:
     void mousePressEvent(QMouseEvent *event);
 private:
-    QMovie* anim = new QMovie(":/Bonus/Sun.gif");
+    QMovie* anim = new QMovie(":/Bonus/rc/Sun.gif");
 };
 
 #endif // ZBONUS_H
