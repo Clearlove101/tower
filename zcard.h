@@ -33,7 +33,7 @@ public:
     zSunFlowerCard(QWidget* parent = 0);
     ~zSunFlowerCard();
 private:
-    QMovie* anim = new QMovie(":/Cards/card_Sunflower.png");
+    QMovie* anim = new QMovie(":/Cards/rc/card_Sunflower.png");
 };
 
 class zPeaShooterCard : public zCard
@@ -42,7 +42,7 @@ public:
     zPeaShooterCard(QWidget* parent = 0);
     ~zPeaShooterCard();
 private:
-    QMovie* anim = new QMovie(":/Cards/card_PeaShooter.png");
+    QMovie* anim = new QMovie(":/Cards/rc/card_PeaShooter.png");
 };
 
 class zWallNutCard : public zCard
@@ -51,8 +51,16 @@ public:
     zWallNutCard(QWidget* parent = 0);
     ~zWallNutCard();
 private:
-    QMovie* anim = new QMovie(":/Cards/card_WallNut.png");
+    QMovie* anim = new QMovie(":/Cards/rc/card_WallNut.png");
 };
 
+class zIcePeaShooterCard: public zCard
+{
+public:
+    zIcePeaShooterCard(QWidget* parent = 0);
+    ~zIcePeaShooterCard();
+private:
+    QMovie* anim = new QMovie(":/Cards/rc/card_IcePeaShooter.png");
+};
 
 #endif // ZCARD_H
